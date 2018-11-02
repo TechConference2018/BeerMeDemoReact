@@ -1,15 +1,10 @@
 import React from 'react';
 
-const Header = ({title, logo, isLoading}) => {
+const Header = (props) => {
   console.log("Header render");
   return (
     <div>
-      <img src={logo} />
-      <h1>{title}</h1>
-      {isLoading ?
-        <div id="loading">
-          <div className="text">{"Loading..."}</div>
-        </div> : null}
+      <h2>Header.js</h2>
     </div>
   );
 };
